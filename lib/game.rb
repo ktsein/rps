@@ -2,6 +2,14 @@ class Game
 
   attr_reader :result
 
+  def self.create
+    @game = Game.new
+  end
+
+  def self.instance
+    @game
+  end
+
   def initialize
     @result
   end
