@@ -1,6 +1,23 @@
-<h1><%= @player%>, choose one!</h1>
+<h1><%=@player.name%>, choose one!</h1>
 
-<form action="/result" method="post">
-  <input type="text" name="player">
-  <input type="submit" value="Submit">
+<form action="/rock" method="post">
+  <input type="submit" value="Rock">
 </form>
+
+<form action="/paper" method="post">
+  <input type="submit" value="Paper">
+</form>
+
+<form action="/scissor" method="post">
+  <input type="submit" value="Scissor">
+</form>
+
+<!-- <form action="/decide" method="post">
+  <input type="radio" name="rock" value="Rock">Rock<br>
+  <input type="radio" name="paper" value="Paper">Paper<br>
+  <input type="radio" name="scissor" value="Scissor">Scissor<br>
+  <br> </br>
+  <div>
+    <input type="submit" value="Done">
+  </div>
+</form> -->
